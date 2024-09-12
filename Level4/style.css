@@ -1,0 +1,49 @@
+#box1{
+    height: 100px;
+    width: 200px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+#box2{
+    height: 100px;
+    width: 50%; /*with respect to parent's width*/
+    border: 2px solid green;
+    margin: 10%; /*with respect to parent's width*/
+    font-size: 0.5em; /*0.5 times parent's font-size*/
+    width: 2em; /*2 times it's own font-size; overrides the above width*/
+    width: 10rem; /*10 times Hello's width; overrides the above width*/
+}
+#b1,#b2,#b3,#b4{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#b1{
+    position: static;
+    left: 50px; /*This property doesnot work*/
+    background-image:url("dog.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#b2{
+    position: relative;
+    top: 20px;
+}
+#b3{
+    position: absolute; /*with respect to body*/
+    top: 100px;
+    z-index: 3;
+}
+#b4{
+    position: fixed;
+    top: 0;
+    left: 20px;
+    z-index: 2;
+}
+#b2{
+    position: sticky;
+    top: 0;
+    left: 50px;
+}
