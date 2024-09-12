@@ -54,3 +54,12 @@ a{
     margin: 25px;
     padding: 20px;
 }
+#content-area{
+    background-color: rgb(213, 168, 175);
+    height: 544px;
+}
+footer{
+    height: 100px;
+    color: white;
+    background-color: black;
+}
