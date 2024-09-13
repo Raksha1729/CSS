@@ -1,7 +1,19 @@
 .smallbox{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     background-color: black;
+    color: white;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(3);
+    transition-delay: 1s; */
+    transition: all 2s ease-in 1s;
+    position:absolute;
+    top: 100px;
+    left: 100px;
+    /* rotate:x 180deg ; */
+    /*x-axis(width) same y-axis(height) double*/
+    /* transform: scale(1,2); */
 }
 /* At 600px, background color becomes blue */
 @media(width:600px){ 
@@ -18,4 +30,15 @@
     .smallbox{
         background-color: yellowgreen;
     }
+}
+.smallbox:hover{
+    /* background-color: blueviolet; */
+    /* transform: scaleY(2); */
+    /* transform: rotate(90deg); */
+    /* transform: translate(20px,50px); */
+    transform: skew(30deg);
+}
+.smallbox:active{
+    background-color: brown;
+    font-size: 20px;
 }
