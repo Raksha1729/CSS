@@ -1,0 +1,16 @@
+.loader{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid chocolate;
+    border-top: 20px solid aquamarine;
+    animation: myAnimation 2s ease-in-out infinite normal;
+}
+@keyframes myAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
