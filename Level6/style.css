@@ -1,0 +1,21 @@
+.smallbox{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+/* At 600px, background color becomes blue */
+@media(width:600px){ 
+    .smallbox{
+        background-color: blue;
+    }
+}
+@media(max-width:600px){
+    .smallbox{
+        background-color: red;
+    }
+}
+@media(min-width:200px) and (max-width:400px){
+    .smallbox{
+        background-color: yellowgreen;
+    }
+}
