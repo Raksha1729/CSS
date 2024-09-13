@@ -1,0 +1,26 @@
+.element{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: chocolate;
+    color:white;
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    /* animation-timing-function: ease-in-out; */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes myAnimation{
+    0%{
+        background-color: chocolate;
+        left: 0px;
+    }
+    50%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: crimson;
+        left: 200px;
+    }
+}
